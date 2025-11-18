@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
-import LoginPage from './components/LoginPage'
-import ChatPage from './components/ChatPage'
+import React from 'react'
+import DashboardShell from './components/DashboardShell'
 
 function App() {
-  const [authed, setAuthed] = useState(true) // temporary: show chat by default
-
-  return authed ? <ChatPage /> : <LoginPage />
+  return <DashboardShell />
 }
 
 export default App
